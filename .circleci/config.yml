@@ -12,11 +12,6 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
-      - run:
-          name: run high priority tests
-          command: |
-            . venv/bin/activate
-             python3 -m pytest tests/resources/tests_docler_test_task.py -m high -v  --alluredir ~/repo/raw_test_result_jsons
 
       - run:
           name: run moderate priority tests
@@ -29,6 +24,12 @@ jobs:
           command: |
             . venv/bin/activate
              python3 -m pytest tests/resources/tests_docler_test_task.py -m low -v  --alluredir ~/repo/raw_test_result_jsons
+
+      - run:
+          name: run high priority tests
+          command: |
+            . venv/bin/activate
+             python3 -m pytest tests/resources/tests_docler_test_task.py -m high -v  --alluredir ~/repo/raw_test_result_jsons
 
       - run:
           name: install allure CLI
