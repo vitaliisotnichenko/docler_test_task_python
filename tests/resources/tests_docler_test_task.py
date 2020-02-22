@@ -15,8 +15,7 @@ class TestTaskDocler:
                                  [
                                      "#home",
                                      "#site",
-                                     "#form",
-                                     "#error"
+                                     "#form"
                                  ])
         def test_verify_titles_at_pages(self, browser, locator):
             self.base_page = BasePage(browser)
@@ -30,8 +29,7 @@ class TestTaskDocler:
                                  [
                                      "#home",
                                      "#site",
-                                     "#form",
-                                     "#error"
+                                     "#form"
                                  ])
         def test_verify_company_logo_at_pages(self, browser, locator):
             self.base_page = BasePage(browser)
