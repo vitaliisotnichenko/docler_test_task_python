@@ -5,7 +5,13 @@ Automation testing for this project were implemented using Python programming la
 # Integration with Circle CI
 [![CircleCI](https://circleci.com/gh/vitaliisotnichenko/docler_test_task_python.svg?style=svg)](https://circleci.com/gh/vitaliisotnichenko/docler_test_task_python)
 
-To run project on the CI and to avoid issues with build project locally you may click on the link above with status of the last build (it failed because there are at least 5 bugs at the testing project)
+When you click on this badge you will redirect to. the CircleCI website. There you have a chance click last build and explore all occurences on different stages building the project and tests
+
+# Allure Reports
+Below I've attached some reporting using probably the best reporting tool Allure
+There we can see that only 17 test cases passed (77 %) and 5 test cases were failed (basically bugs related to Form page)
+
+![Image alt](https://github.com/vitaliisotnichenko/python-web-qa/raw/master/Allure_graphs.png)
 
 
 # Project structure
@@ -40,4 +46,4 @@ It consist of different stages:
 7. run test cases with moderate priority and save results to allure directory - python3 -m pytest tests/tests_docler_test_task.py -m moderate -v --alluredir ~/repo/raw_test_result_jsons
 8. run test cases with low priority and save results to allure directory - python3 -m pytest tests/tests_docler_test_task.py -m moderate -v --alluredir ~/repo/raw_test_result_jsons
 
-# Build and run project tests on the CI - CircleCi
+
