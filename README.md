@@ -5,7 +5,7 @@ Automation testing for this project were implemented using Python programming la
 # Integration with Circle CI
 [![CircleCI](https://circleci.com/gh/vitaliisotnichenko/docler_test_task_python.svg?style=svg)](https://circleci.com/gh/vitaliisotnichenko/docler_test_task_python)
 
-When you click on this badge you will redirect to. the CircleCI website. There you have a chance click last build and explore all occurences on different stages building the project and tests
+When you click on this badge you will redirect to the CircleCI website. There you have a chance click last build and explore all occurences on different stages building the project and tests. The build is failed due to diffrent bugs in the application
 
 # Allure Reports
 Below I've attached some reporting using probably the best reporting tool Allure
