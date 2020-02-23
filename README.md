@@ -5,6 +5,9 @@ Automation testing for this project were implemented using Python programming la
 # Integration with Circle CI
 [![CircleCI](https://circleci.com/gh/vitaliisotnichenko/docler_test_task_python.svg?style=svg)](https://circleci.com/gh/vitaliisotnichenko/docler_test_task_python)
 
+To run project on the CI and to avoid issues with build project locally you may click on the link above with status of the last build (it failed because there are at least 5 bugs at the testing project)
+
+
 # Project structure
 1. src/pages - contains files with pageobjects methods (base_page, error_page, form_page, home_page)
 2. tests/resources - contains files written in gherkin format - design.feature,form.feature
