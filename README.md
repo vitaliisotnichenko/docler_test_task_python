@@ -11,6 +11,7 @@ When you click on this badge you will redirect to. the CircleCI website. There y
 Below I've attached some reporting using probably the best reporting tool Allure
 There we can see that only 17 test cases passed (77 %) and 5 test cases were failed (basically bugs related to Form page)
 
+![Image alt](https://github.com/vitaliisotnichenko/python-web-qa/raw/master/Allure_overview.png)
 ![Image alt](https://github.com/vitaliisotnichenko/python-web-qa/raw/master/Allure_graphs.png)
 
 
@@ -46,4 +47,4 @@ It consist of different stages:
 7. run test cases with moderate priority and save results to allure directory - python3 -m pytest tests/tests_docler_test_task.py -m moderate -v --alluredir ~/repo/raw_test_result_jsons
 8. run test cases with low priority and save results to allure directory - python3 -m pytest tests/tests_docler_test_task.py -m moderate -v --alluredir ~/repo/raw_test_result_jsons
 
-
+P.S. I use at my project library webdriver manager. It helps avoid of issues with different drivers because you don't need to download it, put to the project and add to PATH variables. This library download it and put in the correct place before tests or check it when it do the same before
