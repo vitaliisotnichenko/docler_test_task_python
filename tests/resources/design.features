@@ -1,0 +1,67 @@
+
+Feature: Page design
+    As a user,
+    I'd like to verify design of pages
+
+
+    Background:
+      Given the user navigates to the website
+
+    Scenario Outline: Verify title at pages
+      When the user click on the "<item>"
+      Then "UI Testing Site" title will be shown on the "<item>"
+
+      Examples: Item
+        | item  |
+        | Home  |
+        | Form  |
+        | Error |
+
+
+    Scenario Outline: Verify Company Logo at pages
+      When the user click on the "<item>"
+      Then "Company Logo" will be shown on each page
+
+      Examples: Item
+        | item  |
+        | Home  |
+        | Form  |
+        | Error |
+
+    Scenario: Navigate to the Home page clicking "Home" button
+      When the user click at the "Home" button
+      Then the user should see "Welcome to the Docler Holding QA Department" text at the page
+
+    Scenario: Verify that the "Home" button turns active
+      When the user click at the "Home" button
+      Then the background color at the "Home" button changes color
+
+    Scenario: Navigate to the Form page
+      When the user click at the "Form" button
+      Then the user should see "Form" text at the page
+
+    Scenario: Verify that the "Form" button turns active
+      When the user click at the "Form" button
+      Then the background color at the "Form" button changes color
+
+    Scenario: Verify response code at the Error page
+      When the user click at the "Error" button
+      Then "404 Error: File not found :-)" will be shown at the page
+      And response code will be 404 code
+
+    Scenario: Navigate to the Home page clicking "UI Testing" button
+      When the user click at the "UI Testing" button
+      Then the user should see "Welcome to the Docler Holding QA Department" text at the page
+      And the background color at the "Home" button changes color
+
+    Scenario: Verify the text inside h1 tag at the Home page
+      When the user click at the "Home" button
+      Then the user should see "Welcome to the Docler Holding QA Department" text in the h1 tag
+
+    Scenario: Verify the text inside p tag at the Home page
+      When the user click at the "Home" button
+      Then the user should see "This site is dedicated to perform some exercises and demonstrate automated web testing." text inside the p tag
+
+
+
+

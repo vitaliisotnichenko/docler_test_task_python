@@ -118,7 +118,7 @@ class TestTaskDocler:
             assert "Go!" in submit_button.text
 
         @pytest.mark.high
-        def test_send_the_form_at_the_form_page(self, browser):
+        def test_send_the_form_at_the_form_page_with_filled_input_field(self, browser):
             self.form_page = FormPage(browser)
             self.form_page.open(url_ui)
             self.form_page.is_click_at_the_item("#form")
